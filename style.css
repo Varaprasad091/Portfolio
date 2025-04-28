@@ -1,0 +1,283 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right top, #000428, #004e92);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ffe7;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffe7;
+}
+
+main {
+  padding: 2rem;
+  position: relative;
+}
+
+main::before {
+  content: "Varaprasad Suddala";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.6rem;
+  color: #00ffe7;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -4rem;
+  padding-bottom: 2rem;
+  animation: fadeInTop 2s ease;
+}
+
+@keyframes fadeInTop {
+  0% { opacity: 0; transform: translate(-50%, -30px); }
+  100% { opacity: 1; transform: translate(-50%, 0); }
+}
+
+section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #00ffe7;
+  font-size: 2rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+a {
+  color: #00ffe7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  background: #00ffe7;
+  color: #000;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 255, 231, 0.4);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #66fff3;
+  transform: scale(1.05);
+}
+
+.skills-category {
+  margin-bottom: 2rem;
+}
+
+.skill-item {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+}
+
+.skill-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+.skill-item:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 255, 231, 0.6);
+}
+
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.9);
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.more-btn {
+  background-color: #00ffe7;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #66fff3;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cert-img {
+  flex: 1 1 200px;
+  max-width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.cert-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cert-img:hover {
+  transform: scale(1.05);
+}
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.project-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-logo:hover {
+  transform: scale(1.05);
+}
+
+
+.more-btn {
+  background: none;
+  border: none;
+  color: #f0f0f0;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.more-btn:hover {
+  color: #00ffe7;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid #00ffe7;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.dropdown-menu li a:hover {
+  color: #00ffe7;
+  text-decoration: underline;
+}
+
+/* Removed typing animation */

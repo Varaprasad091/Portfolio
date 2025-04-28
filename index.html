@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varaprasad's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <style>
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80 },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5 },
+          size: { value: 3 },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 2
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" }
+          },
+          modes: {
+            repulse: { distance: 100 },
+            push: { particles_nb: 4 }
+          }
+        },
+        retina_detect: true
+      });
+    });
+  </script>
+</head>
+<body>
+
+
+
+
+
+
+  
+  <div id="particles-js"></div>
+  <header>
+    <h1>Varaprasad Suddala</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <button class="more-btn">More ↓</button>
+          <ul class="dropdown-menu">
+            <li><a href="#achievement">Achievement</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+           
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+     
+     
+    <section id="home" class="reveal" style="text-align: center; padding-top: 8rem; min-height: 90vh; display: flex; flex-direction: column; justify-content: center;">
+      <!-- Hero Section with Quote -->
+       
+
+    <section id="home" class="reveal" style="text-align: center; padding-top: 8rem; min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+      <div class="hero-quote" style="font-style: italic; font-size: 1.4rem; color: #ffffff; max-width: 900px; margin: 0 auto 2rem auto; padding: 0 1rem;">
+        <h2 class="typing">Hello, I'm Varaprasad</h2>
+        <!-- “I do not create. God creates. I assemble, and I steal from everywhere to do it” -->
+      </div>
+      
+      <p style="margin-top: 2rem; font-size: 1.2rem; color: #ccc; max-width: 700px; margin-left: auto; margin-right: auto;">
+        I have always been fascinated by how computers think, which led me to explore programming. I started with C++, sharpening my problem-solving skills through competitive programming on platforms like Codetantra and Leetcode. The thrill of solving complex problems and optimizing code deepened my passion for programming.
+My curiosity then led me to Machine Learning, where I learned Python and explored powerful libraries like TensorFlow, PyTorch, and scikit-learn. I enjoy building models that analyze data, make predictions, and solve real-world problems.
+As I transition from competitive coding to AI, I remain committed to continuous learning and innovation. I am eager to explore advanced AI concepts and leverage technology to create meaningful solutions. With passion and dedication, I aim to make an impact in Machine Learning and AI.
+      </p>
+    </section>
+
+    <section id="resume" class="reveal">
+      <h2>Resume</h2>
+      <p><a href="VP_Specialized1_CV.pdf" download class="download-btn">Download Resume (PDF)</a></p>
+      
+      <h2 id="achievement">Achievement</h2>
+      <p>Achieved over 90% accuracy in a research paper on fake news detection</p>
+
+      <h2 id="education">Education</h2>
+      <ul>
+        <p>B.Tech in CSE, Lovely Professional University (2022 – 2026)</p>
+        <p>Intermediate - Sri Chaitanya Colleges (2020 – 2022)</p>
+        <p>Secondary School  - Vikas High School (2019 – 2020)</p>
+      </ul>
+
+      <h2>Skills</h2>
+
+<div class="skills-category">
+  <h3>Languages:</h3>
+  <div class="skill-item">
+    <img src="c-logo.png" alt="C" class="skill-icon" /> C
+  </div>
+  <div class="skill-item">
+    <img src="cpp-logo.png" alt="C++" class="skill-icon" /> C++
+  </div>
+  <div class="skill-item">
+    <img src="java-logo.png" alt="Java" class="skill-icon" /> Java
+  </div>
+  <div class="skill-item">
+    <img src="python-logo.png" alt="Python" class="skill-icon" /> Python
+  </div>
+</div>
+
+<div class="skills-category">
+  <h3>Libraries:</h3>
+  <div class="skill-item">
+    <img src="numpy-logo.png" alt="NumPy" class="skill-icon" /> NumPy
+  </div>
+  <div class="skill-item">
+    <img src="pandas-logo.png" alt="Pandas" class="skill-icon" /> Pandas
+  </div>
+  <div class="skill-item">
+    <img src="scikit-learn-logo.png" alt="Scikit-learn" class="skill-icon" /> Scikit-learn
+  </div>
+  <div class="skill-item">
+    <img src="ensorflow-logo.png" alt="TensorFlow" class="skill-icon" /> TensorFlow
+  </div>
+</div>
+
+<!-- Similarly for Tools, Databases, Soft Skills -->
+
+
+      <h2 id="certificates">Certificates</h2>
+<section>
+  <div class="certificates">
+    <div class="cert-img reveal">
+      <img src="ML.Jpg" alt="" />
+    </div>
+    <div class="cert-img reveal">
+      <img src="Azure.jpg" alt="Azure AI Certificate" />
+    </div>
+    <div class="cert-img reveal">
+      <img src="Cloud Computing.jpg" alt="Cloud Computing Certificate" />
+    </div>
+    <div class="cert-img reveal">
+      <img src="C++.JPG" alt="C++ Programming Certificate" />
+    </div>
+    <div class="cert-img reveal">
+      <img src="Data Scientist.jpg" alt="Become a Data Scientist" />
+    </div>
+    <div class="cert-img reveal">
+      <img src="Hacker Rank.jpg" alt="Python Basic - HackerRank" />
+    </div>
+  </div>
+</section>
+
+
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      
+      <h3><strong>Fake News Detection (NLP & ML):-</strong> </h3>
+      <img src="project-logo.png" alt="Project Logo" class="project-logo" />
+      <p>•	Developed a robust machine learning system to accurately classify news articles as real or fake using NLP techniques.</p>
+        <p>•	Trained multiple models using the Kaggle Fake News dataset for enhanced accuracy and improved reliability.</p>
+        <p>•	Implemented TF-IDF and CountVectorizer techniques to efficiently convert text into numerical data formats.</p>
+        Compared model performance using various evaluation metrics to determine the most effective and reliable classifier.
+        </p>
+        <p>•	Tech Stack: Python, Scikit-learn, Pandas, NumPy, TF-IDF, SVM, Logistic Regression</p>
+        
+
+      <h3><strong>Library Management System:-</strong></h3>
+      <img src="projectt-logo.png" alt="Project Logo" class="project-logo" />
+      <p>•	Designed and implemented system for managing library records using efficient data structures and optimized algorithms..</p>
+       <p> •	Used Binary Search Tree (BST) for efficient, fast, and organized searching of book records.</p>
+        <p>•	Maintained records of issued books using a Linked List for efficient data organization and quick access.</p>
+        <p>•	Implemented a Hash Map to track the availability of books, ensuring fast lookups and efficient updates.</p>
+        Developed the project in C++ using the Standard Template Library (STL), enhancing efficiency and code simplicity.</p>
+        <p>•	Tech Stack: C++, Linked List, Binary Search Tree, Hash Map, File Handling, STL</p>
+        
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Contact Me</h2>
+      <div class="box-container">
+
+        <div class="box">
+            <!-- <h3>Varaprasad Suddala</h3> -->
+            <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+        </div>
+      <p>Email: <a href="mailto:varaprasadsuddala@gmail.com">varaprasadsuddala@gmail.com</a></p>
+      <p>Phone: 6300250557</p>
+      <p><a href="https://www.linkedin.com/in/varaprasad19/">LinkedIn</a> | <a href="https://github.com/Varaprasad091">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Varaprasad Suddala</p>
+  </footer>
+</body>
+</html>
